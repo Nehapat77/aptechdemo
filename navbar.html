@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .menu {
+        list-style-type: none;
+        width: 1170px;
+        margin: auto;
+        background-color: red;
+      }
+
+      .menuitem {
+        list-style: none;
+        float: left;
+        padding: 15px 25px;
+        position: relative;
+        border: 2px solid green;
+      }
+
+      .menuitem:hover {
+        background-color: yellow;
+      }
+
+      .menuitem:hover .submenu {
+        display: block;
+      }
+
+      .clear {
+        clear: both;
+      }
+      .submenu {
+        list-style-type: none;
+        width: 90px;
+        position: absolute;
+        display: none;
+        left: 0px;
+        top: 100%;
+        background-color: green;
+      }
+
+      .submenuitem {
+        list-style-type: none;
+        padding: 10px;
+        background-color: lightblue;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header style="text-align: center; "> -->
+    <!-- <div class="logo"> <h1>Cities info</h1> -->
+    <!--        -->
+    <!-- <img src="images/camera.jpeg" width="150px" height="50px"></div> -->
+    <!-- <hr> -->
+    <!-- <br><br> -->
+
+    <ul class="menu">
+      <li class="menuitem">Home</li>
+      <li class="menuitem">About</li>
+      <li class="menuitem">
+        Course
+
+        <ul class="submenu">
+          <li class="submenuitem">PHP</li>
+          <li class="submenuitem">Java</li>
+          <li class="submenuitem">C++</li>
+          <li class="submenuitem">Python</li>
+        </ul>
+      </li>
+      <li class="menuitem">Gallery</li>
+      <li class="menuitem">Contact Us</li>
+      <li class="menuitem">Enquiry</li>
+      <li class="clear"></li>
+    </ul>
+
+    <br />
+
+    <article>
+      <h1></h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
+        temporibus delectus. Odio labore deserunt cum, optio nam quos libero
+        fugiat incidunt dolores commodi aliquid. Iusto architecto velit nesciunt
+        nulla voluptates!
+      </p>
+    </article>
+    <aside>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, unde
+        explicabo! Est velit culpa vero ipsum, vel labore optio libero odit
+        ducimus necessitatibus consequatur blanditiis commodi, iste saepe
+        possimus nihil! Consectetur, porro. Facere deserunt eius repellat.
+        Voluptatem temporibus aliquam quis sint? Inventore labore quos unde
+        aliquam quisquam. Veritatis, quo est.
+      </p>
+    </aside>
+  </body>
+</html>
